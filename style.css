@@ -1,0 +1,128 @@
+body{
+    padding: 0%;
+    margin: 0%;
+}
+*{
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+    padding: 10px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    margin-right: 20px;
+padding-left: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    height: 7%;
+}
+h2{
+    margin-top: 1%;
+}
+
+
+h4{
+    margin-top: 7%;
+     margin-right: 30px;
+    display: inline-block;
+    color: black;
+    border: 0;
+}
+.contanier{
+    display: inline-block;
+    z-index: -1;
+    margin-bottom: 10px;
+   
+   }
+   .main1, .main2{
+    position: fixed;
+    
+   }
+
+    .main1{
+        position: absolute;
+        left: 700px;
+        top: 300px;
+        display: inline-block;
+        font-size: x-large;
+        color: black;
+    
+        z-index: 1;
+        
+       
+    }
+    .main2{
+        position: absolute;
+        left: 780px;
+        top: 308px;
+        display: inline-block;
+        font-size: xx-large;
+      color: black;
+
+    }
+
+    .main{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        padding: 20px;
+        z-index: -1;
+
+
+    }
+@media screen and (width < 822px) {
+   .main{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+   }
+  
+   
+  
+}
+@media screen and (width < 700px) {
+    .main{
+        display: block;
+       
+        display: grid;
+       grid-template-columns: repeat(1, 1fr);
+    }
+    img{
+        width: 100%;
+    }
+    .butt{
+        display: none;
+       }
+       .main1{
+        position: absolute;
+        left: 40%;
+        top: 14%;
+        font-size: small;
+       }
+       .main2{
+        position: absolute;
+        left: 51%;
+        top: 15%;
+        font-size: medium;
+       }
+       .contanier{
+        margin-bottom: 0px;
+       }
+       
+   }
+h3{
+    position: relative;
+    top: -75%;
+    left: 15px;
+    background-color: black;
+    display: inline-block;
+    color: white;
+    padding: 10px;
+}
+
+
+
